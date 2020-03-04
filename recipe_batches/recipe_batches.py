@@ -3,12 +3,13 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  for key in recipe.items():
-    if key in ingredients.keys() == key in recipe.keys():
-      print(f"recipie values:{recipe.values()} and ingredients values: {ingredients.values()}")
-      
-      return k
-    else:
+  for key in recipe.keys():
+    if ingredients.keys() == recipe.keys():
+      print(f"values are: {recipe.values()} and {ingredients.values()}")
+      values = ingredients[key] // recipe[key] 
+      print(f"value variable is {values}")  
+      return values
+    elif recipe.keys() != ingredients.keys():
       return 0
 
 
