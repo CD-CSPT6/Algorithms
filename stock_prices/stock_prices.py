@@ -7,8 +7,8 @@ def find_max_profit(prices):
     cur_index = i 
     max_profit = cur_index
     min_profit = cur_index
-    for el in range(el, len(prices)):
-      if el >= 1 and prices[el] > prices[max_profit]:  
+    for el in range(cur_index + 1, len(prices)):
+      if prices[el] > prices[max_profit]:  
           max_profit = el
     for el in range(cur_index, len(prices[0:max_profit])):
       if prices[el] < prices[min_profit]:
