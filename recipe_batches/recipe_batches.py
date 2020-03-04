@@ -3,7 +3,14 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  pass 
+  for key in recipe.items():
+    if key in ingredients.keys() == key in recipe.keys():
+      print(f"recipie values:{recipe.values()} and ingredients values: {ingredients.values()}")
+      
+      return k
+    else:
+      return 0
+
 
 
 if __name__ == '__main__':
