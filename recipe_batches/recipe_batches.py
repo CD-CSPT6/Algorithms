@@ -5,9 +5,7 @@ import math
 def recipe_batches(recipe, ingredients):
   for key in recipe.keys():
     if ingredients.keys() == recipe.keys():
-      print(f"values are: {recipe.values()} and {ingredients.values()}")
-      values = ingredients[key] // recipe[key] 
-      print(f"value variable is {values}")  
+      values = ingredients[key] // recipe[key]   
       return values
     elif recipe.keys() != ingredients.keys():
       return 0
